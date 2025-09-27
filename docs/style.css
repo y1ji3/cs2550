@@ -62,7 +62,8 @@ img {
     height: 300px;
     float: right;
 
-    margin: 20px;
+    margin: 2rem;
+    margin-right: 5rem;
     padding: 5px;
 
     border: 2px solid black;
