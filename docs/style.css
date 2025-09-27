@@ -1,0 +1,113 @@
+
+/* fonts */
+@import url(https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap);
+@import "DreamerTM-Regular.tff";
+
+@font-face {
+    font-family: "dreamerTM";
+    src: url(DreamerTM-Regular.ttf) format('truetype');
+    font-weight: lighter;
+    font-size: small;
+}
+
+/* elements */
+* {
+    text-align: center;
+    font-family: "Pixelify Sans", sans-serif;
+    letter-spacing: 2px;
+    line-height: 1.55;
+    margin: 15px;
+}
+
+h1 {
+    font-family: "dreamerTM";
+    font-size: 75px;
+    letter-spacing: 10px;
+    font-weight: 100;
+}
+
+body {
+    --color-1: rgb(231, 231, 231);
+    --color-2: transparent;
+    --size: 48px;
+    --thickness: 2px;
+    --offset: calc(var(--thickness)* -1);
+    
+    width: 100vw;
+    height: 100vh;
+
+    background: linear-gradient(
+        90deg,
+        var(--color-1) 0 var(--thickness),
+        var(--color-2) var(--thickness)
+    ) var(--offset) 0 / var(--size) var(--size) repeat, 
+    linear-gradient(
+        var(--color-1) 0 var(--thickness),
+        var(--color-2) var(--thickness)
+    ) 0 var(--offset) / var(--size) var(--size) repeat;
+
+}
+
+h2 {
+    margin-top: 45px;
+    margin-bottom: 15px;
+    
+    font-family: "dreamerTM";
+    font-size: 35px;
+    letter-spacing: 5px;
+    font-weight: 100;
+}
+
+img {
+    height: 300px;
+    float: right;
+
+    margin: 20px;
+    padding: 5px;
+
+    border: 2px solid black;
+    background-color: white;
+
+    transition: transform 0.2s ease-in-out;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+li {
+    text-align: left;
+    margin-left: 35px;
+    padding-left: 7px;
+}
+
+#info ol {
+    margin-left: 100px
+}
+
+#pass-time {
+    margin-top: px;
+}
+
+#pass-time p {
+    text-align: left;
+    margin-left: 155px;
+}
+
+.break {
+    background-color:rgb(230, 230, 230); 
+}
+
+#class-schedule {
+    padding-bottom: 5px;
+}
+
+table, th, td {
+    text-align: center;
+
+    border:2px solid rgb(30, 30, 30);
+    border-collapse: collapse;
+
+    justify-self: center;
+    margin-bottom: 100px;
+}
