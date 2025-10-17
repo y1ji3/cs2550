@@ -89,12 +89,15 @@ body {
 .tab-menu {
     margin: 0;
     padding: 0;
-    list-style: none;
+    
     display: block;
 
     float: left;
     margin-right: 2.5rem;
-    height: 100%
+}
+
+.tab-list {
+    list-style: none;
 }
 
 .tab-menu button {
