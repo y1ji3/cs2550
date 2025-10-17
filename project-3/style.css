@@ -1,0 +1,148 @@
+@font-face {
+    font-family: lancelot;
+    src: url("Lancelot-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: vt323;
+    src: url("VT323-Regular.ttf") format("truetype");
+}
+
+* {
+    font-family: lancelot;
+}
+
+body {
+    padding: 2rem;
+    line-height: 1.5;
+
+    --tab-bg: #DFDFE8;
+    --tab-bg-active: black;
+    --tab-text: black;
+    --tab-text-active: white;
+
+    --color-1: rgb(241, 241, 241);
+    --color-2: transparent;
+    --size: 48px;
+    --thickness: 2px;
+    --offset: calc(var(--thickness)* -1);
+
+    height: 90vh;
+
+    background: 
+    linear-gradient(to bottom, #ececf4 0%, #ececf4 105px, transparent 60px),
+    linear-gradient(to top, #ececf4 0%, #ececf4 100px, transparent 60px),
+    linear-gradient(
+        90deg,
+        var(--color-1) 0 var(--thickness),
+        var(--color-2) var(--thickness)
+    ) var(--offset) 0 / var(--size) var(--size) repeat, 
+    linear-gradient(
+        var(--color-1) 0 var(--thickness),
+        var(--color-2) var(--thickness)
+    ) 0 var(--offset) / var(--size) var(--size) repeat;
+
+    background-attachment: fixed;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    height: 85vh;
+    flex: 1;
+    margin-bottom: 5rem;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.main-content h1 {
+    margin: 0;
+}
+
+.sub-content {
+    display: flex;
+    align-items: center;
+    margin-right: 0px;
+}
+
+.sub-content p {
+    margin: 0;
+    margin-top: 0px;
+    line-height: 1;
+}
+
+.sub-content img {
+    align-self: flex-start;
+    width: 40px; 
+    margin-top: -20px;
+    margin-left: 10px; 
+    margin-right: -15px;
+}
+
+.tab-menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: block;
+
+    float: left;
+    margin-right: 2.5rem;
+    height: 100%
+}
+
+.tab-menu button {
+    font-family: vt323;
+    font-size: 20px;
+    letter-spacing: 1px;
+
+    appearance: none;
+    border: 0;
+    background: var(--tab-bg);
+    padding: 1rem 1rem;
+    margin-top: 15px;
+    width: 9rem;
+    box-shadow: 3px 3px 0 #9292ae;
+
+    &.is-active {
+        color: #6F6FA3;
+        background-color: #d4d4ea;
+    }
+}
+
+.tab-menu button:active {
+    background-color: #BEBECC;
+}
+
+.tab-panel {
+    display: none;
+
+    &.is-active {
+        display: block;
+        width: 100%;
+        padding-top: 1rem;
+        line-height: 1.25rem;
+    }
+}
+
+.footer {
+   text-align: center;
+    margin-top: auto;
+    padding-top: 2rem;
+    margin-bottom: -1rem;
+    line-height: 0.25;
+}
+
+.footer p {
+    margin: 1rem 0;
+}
+
+a {
+    color: black;
+}
