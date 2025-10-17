@@ -131,6 +131,14 @@ body {
     }
 }
 
+.other-section {
+    line-height: 1rem;
+}
+
+.other-section img {
+    margin-bottom: -25px;
+}
+
 .footer {
    text-align: center;
     margin-top: auto;
